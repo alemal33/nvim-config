@@ -3,3 +3,5 @@ local function include(name)
 end
 
 include('packer')
+
+include('lastplace')
