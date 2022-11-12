@@ -27,6 +27,8 @@ return require('packer').startup(function(use)
 	use 'nvim-lua/plenary.nvim'
 	use 'kyazdani42/nvim-web-devicons'
 
+	use 'lewis6991/gitsigns.nvim'
+
 	if packer_bootstrap then
 		require('packer').sync()
 	end
