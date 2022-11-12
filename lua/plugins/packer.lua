@@ -18,6 +18,15 @@ return require('packer').startup(function(use)
 	use 'navarasu/onedark.nvim'
 	use 'numToStr/Comment.nvim'
 
+	use {
+		'nvim-telescope/telescope.nvim', branch = '0.1.x',
+		requires = { 'nvim-lua/plenary.nvim' }
+	}
+	use 'natecraddock/telescope-zf-native.nvim'
+	use 'nvim-treesitter/nvim-treesitter'
+	use 'nvim-lua/plenary.nvim'
+	use 'kyazdani42/nvim-web-devicons'
+
 	if packer_bootstrap then
 		require('packer').sync()
 	end
