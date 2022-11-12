@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
 
 	use 'ethanholz/nvim-lastplace'
 	use 'navarasu/onedark.nvim'
+	use 'numToStr/Comment.nvim'
 
 	if packer_bootstrap then
 		require('packer').sync()

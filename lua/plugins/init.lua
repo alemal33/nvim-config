@@ -6,3 +6,4 @@ include('packer')
 
 include('lastplace')
 include('onedark')
+include('comment')
