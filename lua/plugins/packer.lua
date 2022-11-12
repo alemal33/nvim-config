@@ -15,6 +15,7 @@ return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 
 	use 'ethanholz/nvim-lastplace'
+	use 'navarasu/onedark.nvim'
 
 	if packer_bootstrap then
 		require('packer').sync()
