@@ -29,6 +29,8 @@ return require('packer').startup(function(use)
 
 	use 'lewis6991/gitsigns.nvim'
 	use 'williamboman/mason.nvim'
+	use 'williamboman/mason-lspconfig.nvim'
+	use 'neovim/nvim-lspconfig'
 
 	if packer_bootstrap then
 		require('packer').sync()
