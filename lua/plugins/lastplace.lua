@@ -1,3 +1,0 @@
-require('nvim-lastplace').setup {
-
-}
