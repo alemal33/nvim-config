@@ -30,6 +30,10 @@ return require('packer').startup(function(use)
 	}
 	use 'natecraddock/telescope-zf-native.nvim'
 
+	-- Git
+	use { 'lewis6991/gitsigns.nvim', config = get('gitsigns') }
+	use { 'sindrets/diffview.nvim', config = get('diffview') }
+
 	-- Lsp
 	use { 'williamboman/mason-lspconfig.nvim', config = get('lspconfig') }
 	use 'neovim/nvim-lspconfig'
@@ -44,9 +48,6 @@ return require('packer').startup(function(use)
 
 	use 'nvim-treesitter/nvim-treesitter'
 	use 'nvim-lua/plenary.nvim'
-
-	use { 'lewis6991/gitsigns.nvim', config = get('gitsigns') }
-	use { 'sindrets/diffview.nvim', config = get('diffview') }
 
 	if packer_bootstrap then
 		require('packer').sync()
