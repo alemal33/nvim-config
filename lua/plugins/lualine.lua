@@ -1,19 +1,43 @@
 require('lualine').setup {
 
 	options = {
-		component_separators = {},
 		section_separators = {},
+		component_separators = {},
 	},
 
 	sections = {
-		lualine_b = {'branch', 'diff'},
-		lualine_c = {'filename', 'diagnostics'},
+
+		lualine_b = { { '%l %2v', padding = 2 } },
+
+		lualine_c = { { 'filename', path = 3, } },
+
 		lualine_x = {
-			{ 'encoding', padding = { right = 3 }, },
-			{ 'fileformat', padding = { right = 3 }, icons_enabled = false, },
+
+			{
+				'diagnostics',
+				on_click = function()
+					vim.diagnostic.goto_next()
+				end
+			},
+
 		},
-		lualine_y = {},
-		lualine_z = { '%l:%c' },
+
+		lualine_y = {
+
+			{
+				'diff',
+				padding = { left = 1, right = 0 },
+				on_click = function()
+					vim.cmd ':DiffviewOpen'
+				end
+			},
+
+			{ 'branch' },
+
+		},
+
+		lualine_z = {},
+
 	},
 
 }
