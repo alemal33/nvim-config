@@ -46,6 +46,7 @@ return require('packer').startup(function(use)
 	use 'nvim-lua/plenary.nvim'
 
 	use { 'lewis6991/gitsigns.nvim', config = get('gitsigns') }
+	use { 'sindrets/diffview.nvim', config = get('diffview') }
 
 	if packer_bootstrap then
 		require('packer').sync()
