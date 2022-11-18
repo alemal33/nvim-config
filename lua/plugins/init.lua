@@ -49,6 +49,8 @@ return require('packer').startup(function(use)
 	use 'nvim-treesitter/nvim-treesitter'
 	use 'nvim-lua/plenary.nvim'
 
+	use {'windwp/nvim-autopairs', config = require('nvim-autopairs').setup() }
+
 	if packer_bootstrap then
 		require('packer').sync()
 	end
