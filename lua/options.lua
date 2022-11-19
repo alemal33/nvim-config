@@ -9,3 +9,5 @@ opt.cursorline = true
 opt.number = true
 opt.relativenumber = true
 opt.termguicolors = true
+
+opt.guicursor='n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,i:blinkoff300-blinkon200'
