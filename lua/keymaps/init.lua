@@ -15,3 +15,4 @@ end
 
 include('misc')
 include('buffers')
+include('file_pickers')

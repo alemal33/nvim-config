@@ -1,0 +1,5 @@
+NTelescopeMap('ff', 'find_files')
+NTelescopeMap('fg', 'git_files')
+NTelescopeMap('f*', 'grep_string')
+NTelescopeMap('fs', 'live_grep')
+NTelescopeMap('fo', 'oldfiles')
