@@ -45,11 +45,10 @@ return require('packer').startup(function(use)
 
 	use { 'ethanholz/nvim-lastplace', config = require('nvim-lastplace').setup() }
 	use { 'numToStr/Comment.nvim', config = get('comment') }
+	use { 'windwp/nvim-autopairs', config = require('nvim-autopairs').setup() }
 
 	use 'nvim-treesitter/nvim-treesitter'
 	use 'nvim-lua/plenary.nvim'
-
-	use {'windwp/nvim-autopairs', config = require('nvim-autopairs').setup() }
 
 	if packer_bootstrap then
 		require('packer').sync()

@@ -1,9 +1,12 @@
-require('telescope').setup {
+Telescope = require('telescope')
+TelescopeBuiltin = require('telescope.builtin')
+
+Telescope.setup {
 
 	defaults = {
 
 		prompt_prefix = '',
-		path_display = {'truncate'},
+		path_display = { 'truncate' },
 	},
 
 	pickers = {
@@ -20,4 +23,4 @@ require('telescope').setup {
 
 	},
 }
-require('telescope').load_extension('zf-native')
+Telescope.load_extension('zf-native')
