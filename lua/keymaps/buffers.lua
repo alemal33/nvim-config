@@ -1,0 +1,6 @@
+NTelescopeMap('b', 'buffers')
+NTelescopeMap('bb', 'buffers')
+NTelescopeMap('/', 'current_buffer_fuzzy_find')
+NLeaderMap('bd', ':bdelete!<CR>')
+NLeaderMap('bn', ':bnext<CR>')
+NLeaderMap('bp', ':bprev<CR>')
