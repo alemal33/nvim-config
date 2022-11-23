@@ -47,7 +47,12 @@ return require('packer').startup(function(use)
 	use { 'numToStr/Comment.nvim', config = get('comment') }
 	use { 'windwp/nvim-autopairs', config = require('nvim-autopairs').setup() }
 
-	use 'nvim-treesitter/nvim-treesitter'
+	use {
+		'nvim-treesitter/nvim-treesitter',
+		config = get('treesitter'),
+		run = ':TSUpdate',
+	}
+
 	use 'nvim-lua/plenary.nvim'
 
 	if packer_bootstrap then
