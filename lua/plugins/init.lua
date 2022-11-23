@@ -52,6 +52,7 @@ return require('packer').startup(function(use)
 		config = get('treesitter'),
 		run = ':TSUpdate',
 	}
+	use 'nvim-treesitter/nvim-treesitter-refactor'
 
 	use 'nvim-lua/plenary.nvim'
 
