@@ -57,6 +57,7 @@ return require('packer').startup(function(use)
 	use 'nvim-lua/plenary.nvim'
 
 	use { 'echasnovski/mini.surround', config = require('mini.surround').setup() }
+	use 'lukas-reineke/indent-blankline.nvim'
 
 	if packer_bootstrap then
 		require('packer').sync()
