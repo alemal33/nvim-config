@@ -18,7 +18,9 @@ require('lualine').setup {
 
 	sections = {
 
-		lualine_b = { { '%l %2v', padding = 2 } },
+		lualine_a = {},
+
+		lualine_b = { { '%l %2v' } },
 
 		lualine_c = { { 'filename', path = 3, } },
 
